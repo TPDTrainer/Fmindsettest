@@ -1,1 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindset & English Weekend Workshops</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbfbfb; /* Subtle, elegant off-white */
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #4a90e2, #50e3c2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-cta {
+            background-image: linear-gradient(to right, #4a90e2, #50e3c2);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center p-4 md:p-8">
+        <div class="container mx-auto text-center max-w-4xl px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                Unlock Your Potential with Our
+                <span class="text-gradient">Mindset & English</span>
+                Weekend Workshops
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-600 mb-8">
+                Break through mental blocks and speak fluent, confident English.
+            </p>
+            <button id="cta-button" class="bg-gradient-cta hover:opacity-90 transition-opacity text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                Enroll Today
+            </button>
+        </div>
+    </section>
+
+    <!-- Features/Benefits Section -->
+    <section class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">What You Will Master</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                This isn't just about English. It's about a complete transformation from within.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 5.04M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Master Your Mindset</h3>
+                    <p class="text-gray-600">
+                        Destroy the mental blocks, fear of judgment, and self-doubt that hold you back from speaking.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Speak Fluent English</h3>
+                    <p class="text-gray-600">
+                        Practice with real conversations, get instant feedback, and learn to express yourself effortlessly.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Build Unshakeable Confidence</h3>
+                    <p class="text-gray-600">
+                        Gain the confidence to speak anywhere—in meetings, interviews, or social gatherings.
+                    </p>
+                </div>
+                <!-- Card 4 (New Block) -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-4 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Practical Application & Growth</h3>
+                    <p class="text-gray-600">
+                        Learn how to apply your new mindset and English skills to your personal and professional life for continuous growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Generation Form Section (Google Form) -->
+    <section id="lead-capture" class="py-16 bg-blue-50 px-4">
+        <div class="container mx-auto max-w-xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Secure Your Spot</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Fill out the form below to enroll and get instant access to the workshop information.
+            </p>
+            <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 p-2 md:p-4 bg-white">
+                <!-- Google Form Iframe -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMP2rBjoMc4b_bvFQ0eXeg2hlmChIOSAZfTFmid5LEIWOPuA/viewform?embedded=true" width="100%" height="719" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="mt-8">
+                <button id="payment-trigger-button" class="bg-blue-500 hover:bg-blue-600 transition-colors text-white font-bold py-3 px-6 rounded-lg shadow-md">
+                    I have submitted the form!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center hidden z-50 p-4">
+        <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 max-w-md w-full text-center relative transform transition-all duration-300 scale-95 opacity-0" id="payment-modal-content">
+            <button id="close-payment-modal" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Ready to Transform?</h2>
+            <p class="text-gray-600 mb-4">
+                Our workshop is based on a **Pay What You Wish** model.
+                You can contribute any amount you feel is fair for the value you receive.
+            </p>
+            <div class="space-y-3 mb-6">
+                <div class="flex items-center justify-center space-x-2 bg-gray-100 p-3 rounded-lg border border-gray-200">
+                    <img src="https://placehold.co/24x24/16a34a/ffffff?text=U" alt="UPI Icon" class="w-6 h-6 rounded">
+                    <span class="font-semibold text-sm md:text-base text-gray-700 select-all" id="upi-id">
+                        pal-love@ptyes
+                    </span>
+                    <button id="copy-upi" class="text-blue-500 hover:text-blue-700 ml-2 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                            <path d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h4.5a.5.5 0 000-1H6a1 1 0 01-1-1V5a1 1 0 011-1h2a1 1 0 001-1V3z" />
+                            <path d="M12 5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v11a.5.5 0 01-.5.5H12a.5.5 0 01-.5-.5V5z" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="text-xs text-gray-500 mt-1">Click to copy the UPI ID</p>
+            </div>
+            <p class="text-sm md:text-base text-gray-700 mb-6">
+                After making the payment, please share a screenshot on WhatsApp. You will receive the workshop link instantly!
+            </p>
+            <a href="https://wa.me/+918291391831?text=I%20am%20intrested%20for%20Mindset%20and%20English%20Training." target="_blank" class="w-full inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 shadow-md">
+                Send Screenshot on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- About the Trainer Section -->
+    <section class="py-16 bg-gray-50 px-4 rounded-xl shadow-md mx-auto max-w-5xl my-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Meet Your Trainer</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-8 md:space-y-0 text-center md:text-left">
+                <div class="flex-shrink-0">
+                    <!-- Your Photo -->
+                    <img src="1689277435733.png" alt="Trainer's Photo" class="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-white">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Your Journey to Fluency Starts Here</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        With over two decades of experience, your trainer is not just an IT trainer, but a dedicated professional in the fields of soft skills, English speaking, and personality development. As a master's student in Psychology, they bring a unique approach that focuses on overcoming the mental barriers and self-doubt that often hold people back from speaking confidently. This workshop is designed to help you master both the technical skills of English and the mindset required for genuine fluency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 bg-gray-50 px-4">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                A simple, transparent process to join our next workshop.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mb-4">1</div>
+                    <h3 class="font-semibold text-lg mb-2">Fill the Form</h3>
+                    <p class="text-gray-600">Fill your details in the Google form above to register.</p>
+                </div>
+                <!-- Arrow -->
+                <svg class="w-10 h-10 text-gray-400 transform rotate-90 md:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mb-4">2</div>
+                    <h3 class="font-semibold text-lg mb-2">Pay as You Wish</h3>
+                    <p class="text-gray-600">Make your contribution via UPI to my Paytm ID.</p>
+                </div>
+                <!-- Arrow -->
+                <svg class="w-10 h-10 text-gray-400 transform rotate-90 md:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center p-4">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mb-4">3</div>
+                    <h3 class="font-semibold text-lg mb-2">Send Screenshot</h3>
+                    <p class="text-gray-600">Share your payment screenshot with me on WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students Say</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                Real stories of transformation from people just like you.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "I used to hesitate before every word. After just one workshop, I feel a shift in my mindset. My confidence has gone up, and I now actively participate in team meetings."
+                    </p>
+                    <p class="font-semibold text-right text-gray-800">- Rohan P., Software Engineer</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "The 'pay as you wish' model made it so easy to start. The mindset exercises were a game-changer. I'm no longer afraid to make mistakes and can finally express my ideas clearly."
+                    </p>
+                    <p class="font-semibold text-right text-gray-800">- Ananya S., College Student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50 px-4">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                Here are the answers to some common questions you might have.
+            </p>
+            <div class="text-left max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-gray-800 focus:outline-none">
+                        <span>How is the "Pay What You Wish" model fair?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">
+                            Our model is based on trust and value. We believe that if you find our workshop beneficial, you will contribute an amount that reflects that value. This approach also makes our program accessible to everyone, regardless of their financial situation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-gray-800 focus:outline-none">
+                        <span>What if I have an urgent question during the workshop?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">
+                            You'll have a direct line of communication with me via WhatsApp. You can ask questions in the group chat or, for more personal queries, you can send me a direct message. I'm committed to ensuring you get the most out of the workshop.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-gray-800 focus:outline-none">
+                        <span>Do I need to have a specific level of English to join?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-4 pb-4 hidden">
+                        <p class="text-gray-600">
+                            Not at all. The workshop is designed for people who want to improve their confidence and fluency, regardless of their current skill level. Our primary focus is on overcoming mental barriers, which is the first step to becoming a great communicator.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-cta px-4">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Change Your Story?</h2>
+            <p class="text-lg text-white mb-8">
+                Join our next workshop and take the first step towards a more confident you.
+            </p>
+            <button id="final-cta-button" class="bg-white hover:bg-gray-100 transition-colors text-blue-500 font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                Enroll Today
+            </button>
+        </div>
+    </section>
+
+    <!-- JavaScript for Modals and Copy to Clipboard -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctaButton = document.getElementById('cta-button');
+            const finalCtaButton = document.getElementById('final-cta-button');
+            const leadFormSection = document.getElementById('lead-capture');
+
+            const paymentModal = document.getElementById('payment-modal');
+            const paymentModalContent = document.getElementById('payment-modal-content');
+            const closePaymentModal = document.getElementById('close-payment-modal');
+            
+            const copyUpiButton = document.getElementById('copy-upi');
+            const upiIdElement = document.getElementById('upi-id');
+            const whatsappLink = document.querySelector('a[href*="wa.me"]');
+            
+            const paymentTriggerButton = document.getElementById('payment-trigger-button');
+
+            // Pre-fill WhatsApp message
+            const whatsappNumber = "+918291391831";
+            const whatsappMessage = "I am interested in Mindset and English Training.";
+            whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Function to smoothly scroll to the lead form section
+            function scrollToLeadForm() {
+                leadFormSection.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            ctaButton.addEventListener('click', scrollToLeadForm);
+            finalCtaButton.addEventListener('click', scrollToLeadForm);
+
+            function showModal(modal, content) {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    content.classList.remove('opacity-0', 'scale-95');
+                    content.classList.add('opacity-100', 'scale-100');
+                }, 50);
+            }
+
+            function hideModal(modal, content) {
+                content.classList.remove('opacity-100', 'scale-100');
+                content.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+
+            // Show the payment modal after form submission (now a separate button)
+            paymentTriggerButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                showModal(paymentModal, paymentModalContent);
+            });
+
+            // Close payment modal
+            closePaymentModal.addEventListener('click', () => hideModal(paymentModal, paymentModalContent));
+
+            // Close modals on outside click
+            window.addEventListener('click', (e) => {
+                if (e.target === paymentModal) {
+                    hideModal(paymentModal, paymentModalContent);
+                }
+            });
+
+            // Copy UPI ID to clipboard
+            copyUpiButton.addEventListener('click', () => {
+                const upiId = upiIdElement.innerText;
+                const textarea = document.createElement('textarea');
+                textarea.value = upiId;
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    const messageBox = document.createElement('div');
+                    messageBox.innerText = "UPI ID copied to clipboard!";
+                    messageBox.style.cssText = "position:fixed;top:20px;left:50%;transform:translateX(-50%);background-color:#4a90e2;color:white;padding:10px 20px;border-radius:10px;z-index:1000;";
+                    document.body.appendChild(messageBox);
+                    setTimeout(() => document.body.removeChild(messageBox), 2000);
+                } catch (err) {
+                    console.error("Failed to copy text: ", err);
+                }
+                document.body.removeChild(textarea);
+            });
+
+            // FAQ collapsible logic
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const answer = toggle.nextElementSibling;
+                    const icon = toggle.querySelector('svg');
+                    const isCurrentlyOpen = !answer.classList.contains('hidden');
+                    faqToggles.forEach(otherToggle => {
+                        const otherAnswer = otherToggle.nextElementSibling;
+                        const otherIcon = otherToggle.querySelector('svg');
+                        if (otherToggle !== toggle && !otherAnswer.classList.contains('hidden')) {
+                            otherAnswer.classList.add('hidden');
+                            otherIcon.classList.remove('rotate-180');
+                        }
+                    });
+                    if (!isCurrentlyOpen) {
+                        answer.classList.remove('hidden');
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 
