@@ -141,8 +141,15 @@
                 <p class="text-sm font-semibold text-gray-700">Scan this QR code to pay:</p>
                 <img src="Paytm_QRcode_1757364190639.png" alt="Paytm QR Code" class="rounded-lg shadow-md max-w-full h-auto" style="max-height: 20rem;">
                 <p class="text-sm font-semibold text-gray-700">Or use the UPI ID below:</p>
-                <div class="flex items-center justify-center space-x-2 bg-gray-100 p-3 rounded-lg border border-gray-200 w-full">
-                    <img src="https://placehold.co/24x24/16a34a/ffffff?text=U" alt="UPI Icon" class="w-6 h-6 rounded">
+                
+                <!-- UPI Link and Copy Button -->
+                <a href="upi://pay?pa=pal-love@ptyes&pn=PALLAV%20KUNDU" class="flex items-center justify-center space-x-2 bg-gray-100 p-3 rounded-lg border border-gray-200 w-full hover:bg-gray-200 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                    <!-- UPI Logo SVG -->
+                    <svg width="24" height="24" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="fill-current text-green-600">
+                        <path d="M192 128a64 64 0 1 1-64-64a64.07 64.07 0 0 1 64 64Z" opacity=".2"/>
+                        <path d="M228.69 82.59a16 16 0 0 0-14.88-16.71L189.7 64.5a16 16 0 0 0-16.14 7.27L128 144l-45.56-72.23a16 16 0 0 0-16.14-7.27L42.19 65.88a16 16 0 0 0-14.88 16.71l4.94 133.09A16 16 0 0 0 47.19 232h161.62a16 16 0 0 0 14.94-16.32l4.94-133.09ZM47.19 216 42.12 82.9a.05.05 0 0 1 0-.16h0l4.94 133.09Zm161.62 16H47.19l-4.94-133.09L82.44 145.45a16 16 0 0 0 25.44.42L128 108l20.12 37.87a16 16 0 0 0 25.44-.42l4.89-9.21L189.7 64.5l24.11-4.09 4.94 133.09ZM128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Z"/>
+                        <path d="M128 128a32 32 0 1 0-32-32a32 32 0 0 0 32 32Z"/>
+                    </svg>
                     <span class="font-semibold text-sm md:text-base text-gray-700 select-all" id="upi-id">
                         pal-love@ptyes
                     </span>
@@ -153,8 +160,8 @@
                             <path d="M12 5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v11a.5.5 0 01-.5.5H12a.5.5 0 01-.5-.5V5z" />
                         </svg>
                     </button>
-                </div>
-                <p class="text-xs text-gray-500 mt-1">Click to copy the UPI ID</p>
+                </a>
+                <p class="text-xs text-gray-500 mt-1">Tap the UPI ID to pay or click the button to copy it.</p>
             </div>
             <p class="text-sm md:text-base text-gray-700 mb-6">
                 After making the payment, please share a screenshot on WhatsApp. You will receive the workshop link instantly!
@@ -380,7 +387,9 @@
             });
 
             // Copy UPI ID to clipboard
-            copyUpiButton.addEventListener('click', () => {
+            copyUpiButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent the parent link from triggering
                 const upiId = upiIdElement.innerText;
                 const textarea = document.createElement('textarea');
                 textarea.value = upiId;
