@@ -149,8 +149,8 @@
                 <img src="Paytm_QRcode_1757364190639.png" alt="Paytm QR Code" class="rounded-lg shadow-md max-w-full h-auto" style="max-height: 20rem;">
                 <p class="text-sm font-semibold text-gray-700">Or use the UPI ID below:</p>
                 
-                <!-- UPI Link and Copy Button -->
-                <a href="upi://pay?pa=pal-love@ptyes&pn=PALLAV%20KUNDU" class="flex items-center justify-center space-x-2 bg-gray-100 p-3 rounded-lg border border-gray-200 w-full hover:bg-gray-200 transition-colors duration-200" target="_blank" rel="noopener noreferrer">
+                <!-- UPI Copy Container -->
+                <div id="upi-container" class="flex items-center justify-center space-x-2 bg-gray-100 p-3 rounded-lg border border-gray-200 w-full cursor-pointer hover:bg-gray-200 transition-colors duration-200">
                     <!-- UPI Logo Image -->
                     <img src="UPI.webp" alt="UPI Logo" class="w-6 h-6">
                     <span class="font-semibold text-sm md:text-base text-gray-700 select-all" id="upi-id">
@@ -163,8 +163,8 @@
                             <path d="M12 5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v11a.5.5 0 01-.5.5H12a.5.5 0 01-.5-.5V5z" />
                         </svg>
                     </button>
-                </a>
-                <p class="text-xs text-gray-500 mt-1">Tap the UPI ID to pay or click the button to copy it.</p>
+                </div>
+                <p class="text-xs text-gray-500 mt-1">Tap the UPI ID or the icon to copy it.</p>
             </div>
             <p class="text-sm md:text-base text-gray-700 mb-6">
                 After making the payment, please share a screenshot on WhatsApp. You will receive the workshop link instantly!
@@ -338,7 +338,7 @@
             const paymentModalContent = document.getElementById('payment-modal-content');
             const closePaymentModal = document.getElementById('close-payment-modal');
             
-            const copyUpiButton = document.getElementById('copy-upi');
+            const upiContainer = document.getElementById('upi-container');
             const upiIdElement = document.getElementById('upi-id');
             const whatsappLink = document.querySelector('a[href*="wa.me"]');
             
@@ -389,10 +389,10 @@
                 }
             });
 
-            // Copy UPI ID to clipboard
-            copyUpiButton.addEventListener('click', (e) => {
+            // Copy UPI ID to clipboard when the container is tapped
+            upiContainer.addEventListener('click', (e) => {
                 e.preventDefault();
-                e.stopPropagation(); // Prevent the parent link from triggering
+                e.stopPropagation(); // Prevents the click from bubbling up to the modal's background
                 const upiId = upiIdElement.innerText;
                 const textarea = document.createElement('textarea');
                 textarea.value = upiId;
@@ -401,7 +401,7 @@
                 try {
                     document.execCommand('copy');
                     const messageBox = document.createElement('div');
-                    messageBox.innerText = "UPI ID copied to clipboard!";
+                    messageBox.innerText = "UPI ID copied! Please open your UPI app to pay.";
                     messageBox.style.cssText = "position:fixed;top:20px;left:50%;transform:translateX(-50%);background-color:#4a90e2;color:white;padding:10px 20px;border-radius:10px;z-index:1000;";
                     document.body.appendChild(messageBox);
                     setTimeout(() => document.body.removeChild(messageBox), 2000);
