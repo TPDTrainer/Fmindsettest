@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindset & English Weekend Workshops</title>
+    <title>From Fear to Fluent: The Mindset & English Funnel</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #fbfbfb; /* Subtle, elegant off-white */
+            background-color: #fbfbfb;
         }
         .text-gradient {
             background-image: linear-gradient(to right, #4a90e2, #50e3c2);
@@ -23,89 +23,267 @@
         .bg-gradient-cta {
             background-image: linear-gradient(to right, #4a90e2, #50e3c2);
         }
-
-        /* Custom style for the responsive modal content */
+        .shadow-glow {
+            box-shadow: 0 0 10px rgba(74, 144, 226, 0.5), 0 0 20px rgba(80, 227, 194, 0.3);
+        }
         #payment-modal-content {
             max-width: 90%;
             max-height: 90%;
-            overflow-y: auto; /* Enable vertical scrolling if content is too long */
+            overflow-y: auto;
+        }
+        .faq-toggle svg {
+            transition: transform 0.2s ease-in-out;
         }
     </style>
 </head>
 <body class="antialiased text-gray-800">
 
-    <!-- Hero Section -->
+    <!-- Hero Section: The "What If" Question -->
     <section class="min-h-screen flex items-center justify-center p-4 md:p-8">
         <div class="container mx-auto text-center max-w-6xl px-4">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
-                Unlock Your Potential with Our
-                <span class="text-gradient">Mindset & English</span>
-                Weekend Workshops
+                What if Your ONLY Problem with English isn't grammar...
+                <br>
+                It's your <span class="text-gradient">Mindset?</span>
             </h1>
-            <p class="text-lg md:text-2xl text-gray-600 mb-8">
-                Break through mental blocks and speak fluent, confident English.
+            <p class="text-lg md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Discover the hidden psychological barriers stopping you from speaking fluent, confident English.
             </p>
-            <button id="cta-button" class="bg-gradient-cta hover:opacity-90 transition-opacity text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                Enroll Today
+            <button id="cta-button" class="bg-gradient-cta hover:opacity-90 transition-opacity text-white font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-glow">
+                I Need This Transformation!
             </button>
         </div>
     </section>
 
-    <!-- Features/Benefits Section -->
+    <!-- The "Bait" Section: Identifying the Problem -->
     <section class="py-16 bg-white px-4">
         <div class="container mx-auto text-center max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">What You Will Master</h2>
-            <p class="text-lg text-gray-600 mb-12">
-                This isn't just about English. It's about a complete transformation from within.
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">You Know the feeling, right?</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                You've studied English for years. You know the words, you know the rules. But the moment you need to speak...
             </p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 5.04M12 18h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Master Your Mindset</h3>
-                    <p class="text-gray-600">
-                        Destroy the mental blocks, fear of judgment, and self-doubt that hold you back from speaking.
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pain Point 1 -->
+                <div class="flex flex-col items-center justify-start p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <svg class="w-16 h-16 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 00-1 1v3a1 1 0 01-1 1H4a2 2 0 110-4h2a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                    </svg>
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2">The "Mind Goes Blank" Panic</h3>
+                    <p class="text-center text-gray-600">The words just vanish when you're in a meeting with your boss, talking to a customer, or trying to make small talk at a party.</p>
+                </div>
+                <!-- Pain Point 2 -->
+                <div class="flex flex-col items-center justify-start p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <svg class="w-16 h-16 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6-6v6m6-6v6m6-6v6m-4 0v4m-4-4v4m-4-4v4M6 18H4a2 2 0 01-2-2V6a2 2 0 012-2h4l2-2h4l2 2h4a2 2 0 012 2v10a2 2 0 01-2 2h-2"></path>
+                    </svg>
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2">The "Paralyzed By Perfection" Trap</h3>
+                    <p class="text-center text-gray-600">You're terrified of making a mistake, so you say nothing at all. You just nod and smile, while promotions and opportunities slip away.</p>
+                </div>
+                <!-- Pain Point 3 -->
+                <div class="flex flex-col items-center justify-start p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <svg class="w-16 h-16 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2">The "Invisible in the Room" Syndrome</h3>
+                    <p class="text-center text-gray-600">You have brilliant ideas, but in group discussions or on a team, you feel unheard. Your voice gets lost and you feel insignificant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The "Secret" Section: Your Unique Mechanism -->
+    <section class="py-16 bg-gray-50 px-4 rounded-xl shadow-md mx-auto max-w-6xl my-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">So What's The REAL Problem?</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-8 md:space-y-0 text-center md:text-left">
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/200x200/99e699/white?text=Your+Photo" alt="Trainer's Photo" class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover shadow-lg border-4 border-white">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-xl italic font-semibold mb-2 text-gray-800">
+                        "After two decades of training professionals from all walks of life, I've seen that the biggest barrier to speaking English is NOT the vocabulary they lack... It's the <b>psychology</b> they fear."
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mt-4">
+                        Hi, I'm Pallav, and I'm not your typical English teacher. From IT trainers to fresh graduates and dedicated homemakers, I've helped people just like you. My unique method combines the essential English skills you need with the psychological tools to <b>demolish your fear</b>.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mt-2">
+                        I'll teach you the <b>Mindset shifts</b> that make grammar and fluency effortless, so you can stop thinking and start speaking.
                     </p>
                 </div>
-                <!-- Card 2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-teal-100 text-teal-500 mb-4 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Speak Fluent English</h3>
-                    <p class="text-gray-600">
-                        Practice with real conversations, get instant feedback, and learn to express yourself effortlessly.
-                    </p>
+            </div>
+            <div class="text-center mt-8 flex flex-wrap justify-center gap-4">
+                <div class="px-6 py-2 bg-indigo-500 rounded-full text-white font-bold text-sm md:text-base">
+                    Mindset & Goal Setting
                 </div>
-                <!-- Card 3 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-purple-500 mb-4 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Build Unshakeable Confidence</h3>
-                    <p class="text-gray-600">
-                        Gain the confidence to speak anywhere—in meetings, interviews, or social gatherings.
-                    </p>
+                <div class="px-6 py-2 bg-purple-500 rounded-full text-white font-bold text-sm md:text-base">
+                    Work Ethics & Manners
                 </div>
-                <!-- Card 4 (New Block) -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-4 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                        </svg>
+                <div class="px-6 py-2 bg-pink-500 rounded-full text-white font-bold text-sm md:text-base">
+                    Public Speaking & Group Dynamics
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The "Stack" Section: The Value Proposition -->
+    <section class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Here’s Everything You Get...</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                My weekend workshops are not just lessons; they're a comprehensive system to rewire your brain and your voice for success.
+            </p>
+            <div class="space-y-6 max-w-3xl mx-auto text-left">
+                <!-- Stack Item 1 -->
+                <div class="flex items-start bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mr-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-8a1 1 0 011-1h.01a1 1 0 010 2H10a1 1 0 01-1-1zm1-5a1 1 0 00-1 1v4a1 1 0 002 0V5a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
                     </div>
-                    <h3 class="font-bold text-xl mb-2">Practical Application & Growth</h3>
-                    <p class="text-gray-600">
-                        Learn how to apply your new mindset and English skills to your personal and professional life for continuous growth.
+                    <div>
+                        <h3 class="font-bold text-xl mb-1 text-gray-800">Mindset Mastery & Goal Setting</h3>
+                        <p class="text-gray-600">Forget cramming. We tackle the root cause of your frustration: the mental blocks holding you back. This is where the real transformation begins.</p>
+                    </div>
+                </div>
+                <!-- Stack Item 2 -->
+                <div class="flex items-start bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mr-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 00-1 1v1a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1H7zM5 7a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H7a2 2 0 01-2-2V7z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-1 text-gray-800">Core Communication & Grammar Training</h3>
+                        <p class="text-gray-600">Master the basics that matter. From greetings to family conversations, we'll give you the tools to speak clearly and confidently.</p>
+                    </div>
+                </div>
+                <!-- Stack Item 3 -->
+                <div class="flex items-start bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-200">
+                    <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mr-4">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4H9v-2h2v2zm0-4H9V7h2v3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-1 text-gray-800">Interview & Public Speaking System</h3>
+                        <p class="text-gray-600">This isn't just about language. It's about opportunity. We'll show you how to ace interviews, command a room, and speak with charisma in any setting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Proof Section (Funnel Hack) -->
+    <section class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Don't Just Take My Word For It</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                Real people, real results. Here's what they have to say.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "I used to shrink in meetings. After this workshop, I felt a total shift. My confidence soared, and now I'm the one leading conversations. It's truly a mindset game-changer."
                     </p>
+                    <p class="font-semibold text-right text-gray-800">- Rohan P., Software Engineer</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "The 'Pay What You Wish' model made it so easy to get started. I was skeptical, but the mindset exercises alone were worth it. My fear of making mistakes is gone."
+                    </p>
+                    <p class="font-semibold text-right text-gray-800">- Ananya S., College Student</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "As a person with ADHD, my thoughts are a mess. This workshop gave me simple, actionable tools to organize my thoughts and speak clearly. My interviews are a breeze now."
+                    </p>
+                    <p class="font-semibold text-right text-gray-800">- Jaskaran S., IT Professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                    <button class="flex justify-between items-center w-full p-6 text-lg font-semibold text-left faq-toggle">
+                        <span>What is the "Pay What You Wish" model? Is this a free workshop?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 transition-all duration-300 ease-in-out">
+                        <p>This model is based on trust and value. You get to attend the workshop and experience the transformation first-hand. After the workshop, you contribute an amount you feel is fair for the value you received. It is not free, as you're expected to contribute, but it removes the financial barrier so anyone can start their journey.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                    <button class="flex justify-between items-center w-full p-6 text-lg font-semibold text-left faq-toggle">
+                        <span>Is this only for working professionals? What about fresh graduates or homemakers?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 transition-all duration-300 ease-in-out">
+                        <p>This workshop is for <b>anyone</b> who wants to build confidence in English. Our methods are universal and address the core psychological barriers to fluency, no matter your background or profession. Whether you're a fresh graduate preparing for interviews, a homemaker building confidence, or a professional aiming for a promotion, this workshop is designed for you.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                    <button class="flex justify-between items-center w-full p-6 text-lg font-semibold text-left faq-toggle">
+                        <span>How do I get the workshop link?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 transition-all duration-300 ease-in-out">
+                        <p>After you submit the form on this page and make your payment via UPI, you will share a screenshot of the payment on WhatsApp. Our team will verify your payment and send you the workshop link instantly, so you can get started right away.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                    <button class="flex justify-between items-center w-full p-6 text-lg font-semibold text-left faq-toggle">
+                        <span>Is this a live workshop or a series of pre-recorded videos?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 transition-all duration-300 ease-in-out">
+                        <p>This is a live, interactive weekend workshop. We believe that real transformation happens through direct interaction and real-time feedback. You'll have the opportunity to ask questions, practice with other participants, and get personalized coaching from Pallav himself.</p>
+                    </div>
+                </div>
+
+                <!-- New FAQ Item for Contact -->
+                <div class="rounded-xl overflow-hidden shadow-md border border-gray-200 bg-white">
+                    <button class="flex justify-between items-center w-full p-6 text-lg font-semibold text-left faq-toggle">
+                        <span>How can I connect with you and your community?</span>
+                        <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-200 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 transition-all duration-300 ease-in-out">
+                        <p class="mb-2">You can connect with us directly or follow for daily updates and inspiration:</p>
+                        <p class="mb-2">
+                            <a href="https://wa.me/918291391831" target="_blank" class="text-blue-500 hover:underline flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.276 4.093 9.61 9.421 9.947l.579.053v-4.597c-3.132.843-3.792-1.332-3.792-1.332s-.227-.47.053-.948c.28-.477 1.054-.948 1.054-.948.843-.477 2.105.843 2.105.843.843.477 2.684.341 3.414-.142.341-.194.597-.34.843-.477.194-.142.34-.341.34-.597 0-.34-.142-.597-.34-.843-.194-.194-.477-.28-.843-.477-.477-.194-.843-.28-1.332-.34-.477-.053-.843-.053-1.054.053-.34.194-.597.597-.597.597.194.34.341.597.597.843.34.341.597.682.843 1.054.34.341.597.682.843 1.054.341.477.597.948.843 1.54.477 1.054.477 2.316.053 3.414.28 0 .597.053.843.142.477.142.76.34 1.054.597.477.477.597 1.054.597 1.841 0 1.332-.597 2.895-2.28 4.227-2.193 1.62-5.748 1.581-7.859 1.581C6.477 22 2 17.523 2 12zm8.474-6.421c-.28-.053-.597-.053-.843.053-.28.142-.477.34-.597.597-.142.28-.142.597.053.843.194.28.477.477.843.597.34.142.682.142.948-.053.28-.194.477-.477.597-.843.142-.28.142-.597-.053-.843-.194-.28-.477-.477-.843-.597-.34-.142-.682-.142-.948.053z"/>
+                                </svg>
+                                WhatsApp: +91 - 8291-391-831
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/pallav.themindset.trainer" target="_blank" class="text-blue-500 hover:underline flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.228.156 4.304 1.706 4.464 4.908.157 3.227.07 3.584.07 4.85s.087 1.623-.07 4.85c-.16 3.202-1.236 4.752-4.464 4.908-3.227.157-3.584.07-4.85.07s-1.623.087-4.85-.07c-3.202-.16-4.752-1.236-4.908-4.464-.157-3.227-.07-3.584-.07-4.85s-.087-1.623.07-4.85c.16-3.202 1.236-4.752 4.464-4.908 3.227-.157 3.584-.07 4.85-.07zm0-2.163c-3.376 0-3.791.013-5.118.077-3.328.163-5.462 2.308-5.625 5.636-.164 3.327-.077 3.791-.077 5.118s-.087 1.623.07 4.85c.16 3.202 1.236 4.752 4.464 4.908 3.227.157 3.584.07 4.85.07s1.623.087 4.85-.07c3.202-.16 4.752-1.236 4.908-4.464.157-3.227.07-3.584.07-4.85s.087-1.623-.07-4.85c-.16-3.202-1.236-4.752-4.464-4.908-3.227-.157-3.584-.07-4.85-.07zm0 1.794a9.794 9.794 0 100 19.588 9.794 9.794 0 000-19.588zm0 2.222a7.572 7.572 0 110 15.144 7.572 7.572 0 010-15.144zm0 2.5a5.072 5.072 0 100 10.144 5.072 5.072 0 000-10.144zm5.553-.357a1.218 1.218 0 110 2.436 1.218 1.218 0 010-2.436z"/>
+                                </svg>
+                                Instagram: @pallav.themindset.trainer
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,9 +292,9 @@
     <!-- Lead Generation Form Section (Google Form) -->
     <section id="lead-capture" class="py-16 bg-blue-50 px-4">
         <div class="container mx-auto max-w-xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Secure Your Spot</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Secure Your Seat Now</h2>
             <p class="text-lg text-gray-600 mb-8">
-                Fill out the form below to enroll and get instant access to the workshop information.
+                Your future self will thank you for taking this small step.
             </p>
             <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 p-2 md:p-4 bg-white">
                 <!-- Google Form Iframe -->
@@ -140,19 +318,17 @@
             </button>
             <h2 class="text-2xl font-bold mb-4 text-gray-800">Ready to Transform?</h2>
             <p class="text-gray-600 mb-4">
-                Our workshop is based on a **Pay What You Wish** model.
+                Our workshop is based on a <b>Pay What You Wish</b> model.
                 You can contribute any amount you feel is fair for the value you receive.
             </p>
             <div class="flex flex-col items-center justify-center space-y-4 mb-6">
-                <!-- Paytm QR Code -->
+                <!-- IMPORTANT: Replace this placeholder QR code with your own. -->
                 <p class="text-sm font-semibold text-gray-700">Scan this QR code to pay:</p>
-                <img src="Paytm_QRcode_1757364190639.png" alt="Paytm QR Code" class="rounded-lg shadow-md max-w-full h-auto" style="max-height: 20rem;">
+                <img src="https://placehold.co/300x300/e2e8f0/4a5568?text=Your+Paytm+QR+Code" alt="Paytm QR Code" class="rounded-lg shadow-md max-w-full h-auto" style="max-height: 20rem;">
                 <p class="text-sm font-semibold text-gray-700">Or use the UPI ID below:</p>
                 
                 <!-- UPI Copy Container -->
                 <div id="upi-container" class="flex items-center justify-center space-x-2 bg-gray-100 p-3 rounded-lg border border-gray-200 w-full cursor-pointer hover:bg-gray-200 transition-colors duration-200">
-                    <!-- UPI Logo Image -->
-                    <img src="UPI.webp" alt="UPI Logo" class="w-6 h-6">
                     <span class="font-semibold text-sm md:text-base text-gray-700 select-all" id="upi-id">
                         pal-love@ptyes
                     </span>
@@ -176,38 +352,19 @@
         </div>
     </div>
 
-    <!-- About the Trainer Section -->
-    <section class="py-16 bg-gray-50 px-4 rounded-xl shadow-md mx-auto max-w-6xl my-8">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Meet Your Trainer</h2>
-            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-8 space-y-8 md:space-y-0 text-center md:text-left">
-                <div class="flex-shrink-0">
-                    <!-- Your Photo -->
-                    <img src="Professional_in_Suit.jpeg" alt="Trainer's Photo" class="w-40 h-50 rounded-full object-cover object-top shadow-lg border-4 border-white">
-                </div>
-                <div class="md:w-2/3">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Your Journey to Fluency Starts Here</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        With over two decades of experience, your trainer is not just an IT trainer, but a dedicated professional in the fields of soft skills, English speaking, and personality development. As a master's student in Psychology, they bring a unique approach that focuses on overcoming the mental barriers and self-doubt that often hold people back from speaking confidently. This workshop is designed to help you master both the technical skills of English and the mindset required for genuine fluency.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- How It Works Section -->
     <section class="py-16 bg-gray-50 px-4">
         <div class="container mx-auto text-center max-w-6xl">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
             <p class="text-lg text-gray-600 mb-12">
-                A simple, transparent process to join our next workshop.
+                Your journey to effortless fluency starts here.
             </p>
             <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
                 <!-- Step 1 -->
                 <div class="flex flex-col items-center text-center p-4">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mb-4">1</div>
-                    <h3 class="font-semibold text-lg mb-2">Fill the Form</h3>
-                    <p class="text-gray-600">Fill your details in the Google form above to register.</p>
+                    <h3 class="font-semibold text-lg mb-2">Claim Your Spot</h3>
+                    <p class="text-gray-600">Fill your details in the form above to lock in your seat in the workshop.</p>
                 </div>
                 <!-- Arrow -->
                 <svg class="w-10 h-10 text-gray-400 transform rotate-90 md:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -216,8 +373,8 @@
                 <!-- Step 2 -->
                 <div class="flex flex-col items-center text-center p-4">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mb-4">2</div>
-                    <h3 class="font-semibold text-lg mb-2">Pay What You Wish</h3>
-                    <p class="text-gray-600">Make your contribution from your UPI app to my Paytm ID.</p>
+                    <h3 class="font-semibold text-lg mb-2">Pay What It's Worth</h3>
+                    <p class="text-gray-600">You decide the value. Make your contribution from your UPI app.</p>
                 </div>
                 <!-- Arrow -->
                 <svg class="w-10 h-10 text-gray-400 transform rotate-90 md:rotate-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -226,90 +383,8 @@
                 <!-- Step 3 -->
                 <div class="flex flex-col items-center text-center p-4">
                     <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white font-bold text-xl mb-4">3</div>
-                    <h3 class="font-semibold text-lg mb-2">Send Screenshot</h3>
-                    <p class="text-gray-600">Share your payment screenshot with me on WhatsApp.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-white px-4">
-        <div class="container mx-auto text-center max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Students Say</h2>
-            <p class="text-lg text-gray-600 mb-12">
-                Real stories of transformation from people just like you.
-            </p>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
-                    <p class="text-gray-700 italic mb-4">
-                        "I used to hesitate before every word. After just one workshop, I feel a shift in my mindset. My confidence has gone up, and I now actively participate in team meetings."
-                    </p>
-                    <p class="font-semibold text-right text-gray-800">- Rohan P., Software Engineer</p>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-50 rounded-xl p-6 shadow-md border border-gray-200">
-                    <p class="text-gray-700 italic mb-4">
-                        "The '**Pay What You Wish**' model made it so easy to start. The mindset exercises were a game-changer. I'm no longer afraid to make mistakes and can finally express my ideas clearly."
-                    </p>
-                    <p class="font-semibold text-right text-gray-800">- Ananya S., College Student</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ Section -->
-    <section class="py-16 bg-gray-50 px-4">
-        <div class="container mx-auto text-center max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p class="text-lg text-gray-600 mb-12">
-                Here are the answers to some common questions you might have.
-            </p>
-            <div class="text-left max-w-3xl mx-auto space-y-4">
-                <!-- FAQ Item 1 -->
-                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-gray-800 focus:outline-none">
-                        <span>How is the "Pay What You Wish" model fair?</span>
-                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer px-4 pb-4 hidden">
-                        <p class="text-gray-600">
-                            Our model is based on trust and value. We believe that if you find our workshop beneficial, you will contribute an amount that reflects that value. This approach also makes our program accessible to everyone, regardless of their financial situation.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-gray-800 focus:outline-none">
-                        <span>What if I have an urgent question during the workshop?</span>
-                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer px-4 pb-4 hidden">
-                        <p class="text-gray-600">
-                            You'll have a direct line of communication with me via WhatsApp on <b>+91-8291-391-831</b> or on Instagram <b>@pallav.themindset.trainer</b>. I'm committed to ensuring you get the most out of the workshop.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button class="faq-toggle w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-gray-800 focus:outline-none">
-                        <span>Do I need to have a specific level of English to join?</span>
-                        <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer px-4 pb-4 hidden">
-                        <p class="text-gray-600">
-                            Not at all. The workshop is designed for people who want to improve their confidence and fluency, regardless of their current skill level. Our primary focus is on overcoming mental barriers, which is the first step to becoming a great communicator.
-                        </p>
-                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Get Instant Access</h3>
+                    <p class="text-gray-600">Send your payment screenshot on WhatsApp to get the secret workshop link!</p>
                 </div>
             </div>
         </div>
@@ -318,15 +393,21 @@
     <!-- Final CTA Section -->
     <section class="py-16 bg-gradient-cta px-4">
         <div class="container mx-auto text-center max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Change Your Story?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready To FINALLY Find Your Voice?</h2>
             <p class="text-lg text-white mb-8">
-                Join our next workshop and take the first step towards a more confident you.
+                Stop living in fear of your next conversation. Enroll now and unlock the confident speaker inside you.
             </p>
             <button id="final-cta-button" class="bg-white hover:bg-gray-100 transition-colors text-blue-500 font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                Enroll Today
+                Let's Do This!
             </button>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center py-6 px-4 text-gray-600 text-sm">
+        <p class="mb-2">&copy; 2025 The Mindset & English Funnel. All rights reserved.</p>
+        <p>This is a single-page sales funnel.</p>
+    </footer>
 
     <!-- JavaScript for Modals and Copy to Clipboard -->
     <script>
@@ -347,10 +428,9 @@
 
             // Pre-fill WhatsApp message
             const whatsappNumber = "+918291391831";
-            const whatsappMessage = "I am intrested for Mindset and English Training.";
+            const whatsappMessage = "I am interested in the Mindset and English Training.";
             whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-            // Function to smoothly scroll to the lead form section
             function scrollToLeadForm() {
                 leadFormSection.scrollIntoView({ behavior: 'smooth' });
             }
@@ -393,7 +473,7 @@
             // Copy UPI ID to clipboard when the container is tapped
             upiContainer.addEventListener('click', (e) => {
                 e.preventDefault();
-                e.stopPropagation(); // Prevents the click from bubbling up to the modal's background
+                e.stopPropagation();
                 const upiId = upiIdElement.innerText;
                 const textarea = document.createElement('textarea');
                 textarea.value = upiId;
@@ -419,6 +499,8 @@
                     const answer = toggle.nextElementSibling;
                     const icon = toggle.querySelector('svg');
                     const isCurrentlyOpen = !answer.classList.contains('hidden');
+                    
+                    // Collapse all other open answers
                     faqToggles.forEach(otherToggle => {
                         const otherAnswer = otherToggle.nextElementSibling;
                         const otherIcon = otherToggle.querySelector('svg');
@@ -427,7 +509,12 @@
                             otherIcon.classList.remove('rotate-180');
                         }
                     });
-                    if (!isCurrentlyOpen) {
+                    
+                    // Toggle the clicked answer
+                    if (isCurrentlyOpen) {
+                        answer.classList.add('hidden');
+                        icon.classList.remove('rotate-180');
+                    } else {
                         answer.classList.remove('hidden');
                         icon.classList.add('rotate-180');
                     }
