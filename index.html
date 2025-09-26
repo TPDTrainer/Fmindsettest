@@ -23,6 +23,13 @@
         .bg-gradient-cta {
             background-image: linear-gradient(to right, #4a90e2, #50e3c2);
         }
+
+        /* Custom style for the responsive modal content */
+        #payment-modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            overflow-y: auto; /* Enable vertical scrolling if content is too long */
+        }
     </style>
 </head>
 <body class="antialiased text-gray-800">
@@ -125,7 +132,7 @@
 
     <!-- Payment Modal -->
     <div id="payment-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 hidden z-50">
-        <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 max-w-sm w-full text-center relative transform transition-all duration-300 scale-95 opacity-0" id="payment-modal-content">
+        <div class="bg-white rounded-xl shadow-2xl p-6 md:p-8 w-full text-center relative transform transition-all duration-300 scale-95 opacity-0" id="payment-modal-content">
             <button id="close-payment-modal" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
